@@ -17,7 +17,7 @@ stages:
   - job: Build
     steps:
     - checkout: self
-      endpoint: github-connection     # 👈 Add your GitHub service connection here
+      endpoint: github-pat     # 👈 Add your GitHub service connection here
 
     - task: Maven@3
       inputs:
